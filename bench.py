@@ -114,7 +114,7 @@ def main() -> None:
     model = build_model(cfg)
     dataloader = build_dataloader(cfg, d_in, dtype)
 
-    criterion = torch.compile(nn.MSELoss())
+    criterion = nn.MSELoss()
     optimizer = torch.optim.AdamW(model.parameters(), lr=1e-3)
 
     def run_loop():
