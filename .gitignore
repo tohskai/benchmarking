@@ -1,0 +1,6 @@
+.ipynb_checkpoints
+env
+*.nsys-rep
+*.ncu-rep
+runs
+.python-version
